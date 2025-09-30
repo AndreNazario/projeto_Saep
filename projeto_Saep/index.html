@@ -14,6 +14,17 @@
 
     <!-- Estilos customizados para esse template -->
     <link href="login/css/carousel.css" rel="stylesheet">
+    <style>
+      .carousel-item {
+        height: 65vh; /* Define a altura do carrossel para 65% da altura da tela */
+      }
+      .carousel-item > img {
+        object-fit: contain; /* Garante que a imagem inteira apareça, sem cortes */
+        object-position: center;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
 
@@ -58,33 +69,18 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="login/imagem/foto minha 1.jpeg" alt="First slide">
             <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Quem Sou Eu?</h1>
-                <p>Meu nome é André Nazário, tenho 17 anos e sou formado em ingles, estudo Análise e desenvolvimento de Sistemas e Hardware e Software... Mais Abaixo mostrarei mais sobre mim.</p>
-                <p><a class="btn btn-lg btn-primary" href="sobre.html" role="button">Saiba mais</a></p>
-              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide" src="login/imagem/foto minha 2.jpeg" alt="Second slide">
             <div class="container">
-              <div class="carousel-caption">
-                <h1>Tecnologias</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="tecnologias.html" role="button">Ver tecnologias</a></p>
-              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="login/imagem/foto minha 3.jpeg" alt="Third slide">
             <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>Redes Sociais</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="redes_sociais.html" role="button">Ver redes</a></p>
-              </div>
             </div>
           </div>
         </div>
@@ -98,16 +94,31 @@
         </a>
       </div>
 
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="featurette-heading">Quem Sou Eu?</h2>
+            <p class="lead">Meu nome é André Nazário, tenho 17 anos e sou formado em ingles, estudo Análise e desenvolvimento de Sistemas e Hardware e Software... Mais nas outras abas mostrarei mais sobre mim.</p>
+            <p><a class="btn btn-primary" href="sobre.html" role="button">Saiba mais</a></p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+
     </main>
 
     <!-- Principal JavaScript do Bootstrap
     ================================================== -->
     <!-- Foi colocado no final para a página carregar mais rápido -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
